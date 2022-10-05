@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <PackageReference Include="mvc.simple.project.10.04.22.001.Test" Version="1.0.1" />
+    <PackageReference Include="mvc.simple.project.alpha" Version="1.0.0" />
   </ItemGroup>
 </Project>

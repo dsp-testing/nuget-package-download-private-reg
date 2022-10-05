@@ -4,17 +4,17 @@
 # https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
 
 version: 2
-#registries:
-#  nuget-example:
-#    type: nuget-feed
-#    url: https://ankithoney.bytesafe.dev/nuget/example-nuget/index.json
-#    username: bytesafe
-#    password: ${{secrets.MY_NUGET_PASSWORD}}
+registries:
+  nuget-example:
+    type: nuget-feed
+    url: https://ankithoney.bytesafe.dev/nuget/example-nuget/index.json
+    username: bytesafe
+    password: ${{secrets.MY_NUGET_PASSWORD}}
 
 updates:
   - package-ecosystem: "nuget"
-    #registries:
-    #   - nuget-example # Allow version updates for dependencies in this registry
+    registries:
+       - nuget-example # Allow version updates for dependencies in this registry
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"

@@ -9,3 +9,10 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+      
+registries:
+  nuget-example:
+    type: nuget-feed
+    url: https://ankithoney.bytesafe.dev/nuget/example-nuget/index.json
+    username: bytesafe
+    password: ${{secrets.MY_NUGET_PASSWORD}}
